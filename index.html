@@ -23,21 +23,23 @@
     }
 
     /* ===== NAVBAR ===== */
+/* ===== NAVBAR ===== */
 nav {
   position: sticky;
   top: 0;
   z-index: 1000;
   display: flex;
-  justify-content: flex-start; /* align left */
-  padding: 15px 0;
-  border-bottom: 1px solid #30363d; /* vetëm vija e hollë poshtë */
+  justify-content: flex-start; /* menu align left */
+  padding: 15px 20px; /* pak padding nga krahu i majtë */
   background: transparent; /* pa background */
+  width: 100%; /* shtrihet e gjithe faqja */
+  border-bottom: 1px solid #30363d; /* vija e hollë poshtë menu */
 }
 
 nav ul {
   list-style: none;
   margin: 0;
-  padding: 0 20px; /* pak padding nga krahu i majtë */
+  padding: 0;
   display: flex;
   gap: 15px;
 }
@@ -47,14 +49,14 @@ nav ul li a {
   font-size: 14px;
   text-decoration: none;
   transition: all 0.3s;
-  padding: 0; /* heq padding-in e elipsit */
-  border: none; /* heq border-in e elipsit */
-  border-radius: 0; /* heq border-radius */
+  padding: 0;
+  border: none;
+  border-radius: 0;
 }
 
 nav ul li a:hover {
   color: #58a6ff;
-  text-decoration: underline; /* efekt hover me underline */
+  text-decoration: underline;
 }
     /* ===== HEADER ===== */
     .header {
