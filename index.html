@@ -114,7 +114,8 @@ nav ul li a:hover {
 
     /* ===== SECTIONS ===== */
 section {
-  padding: 60px 0; /* kjo krijon hapësirë të madhe lart dhe poshtë çdo seksioni */
+  padding: 30px 0 20px 0; 
+  /*padding: 60px 0; /* kjo krijon hapësirë të madhe lart dhe poshtë çdo seksioni */
   border-bottom: none;
 }
 
@@ -156,7 +157,21 @@ section h2 {
   font-size: 14px;
 }
 
+.education-item {
+  margin-bottom: 20px;
+}
 
+.edu-degree {
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+.edu-details {
+  color: #cbd5e1;
+  font-size: 14px;
+  line-height: 1.5;
+}
   </style>
 </head>
 <body>
@@ -277,10 +292,30 @@ section h2 {
 
 </section>
 
-    <section id="education">
-      <h2>Education</h2>
-      <p>Write your academic background here.</p>
-    </section>
+<section id="education">
+  <h2>Education</h2>
+
+  <div class="education-item">
+    <div class="edu-degree">PhD Candidate</div>
+    <div class="edu-details">
+      University of Ljubljana | Faculty of Computer and Information Science | Ljubljana, Slovenia
+    </div>
+  </div>
+
+  <div class="education-item">
+    <div class="edu-degree">Master of Science</div>
+    <div class="edu-details">
+      University of Prishtina “Hasan Prishtina” | Faculty of Electrical and Computer Engineering | Computer Engineering Department | Pristina, Kosovo
+    </div>
+  </div>
+
+  <div class="education-item">
+    <div class="edu-degree">Bachelor of Science</div>
+    <div class="edu-details">
+      University of Prishtina “Hasan Prishtina” | Faculty of Mathematical and Natural Sciences | Department of Computer Science | Pristina, Kosovo
+    </div>
+  </div>
+</section>
 
     <section id="skills">
       <h2>Skills</h2>
