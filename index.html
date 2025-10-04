@@ -24,42 +24,43 @@
 
     /* ===== NAVBAR ===== */
     nav {
-      background-color: #161b22;
-      padding: 15px 0;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      display: flex;
-      justify-content: center;
-    }
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: flex-start; /* align left */
+  padding: 15px 0;
+  border-bottom: 1px solid #30363d; /* vetëm vija e hollë poshtë */
+  background: transparent; /* pa background */
+}
 
-    nav ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      gap: 15px;
-    }
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 20px; /* pak padding nga krahu i majtë */
+  display: flex;
+  gap: 15px;
+}
 
-    nav ul li a {
-      display: inline-flex;
-      gap: 6px;
-      align-items: center;
-      padding: 6px 12px;
-      border: 1px solid #273044;
-      border-radius: 999px;
-      background: #121722;
-      color: #cbd5e1;
-      font-size: 14px;
-      text-decoration: none;
-      transition: all 0.3s;
-    }
+nav ul li a {
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+  padding: 6px 12px;
+  border: 1px solid #273044;
+  border-radius: 999px;
+  background: #121722; /* mund ta heqim ose ta lëmë */
+  color: #cbd5e1;
+  font-size: 14px;
+  text-decoration: none;
+  transition: all 0.3s;
+}
 
-    nav ul li a:hover {
-      background: #1e2635;
-      color: #58a6ff;
-      border-color: #58a6ff;
-    }
+nav ul li a:hover {
+  background: #1e2635;
+  color: #58a6ff;
+  border-color: #58a6ff;
+}
 
     /* ===== HEADER ===== */
     .header {
