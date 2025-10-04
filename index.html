@@ -194,6 +194,18 @@ section h2 {
 .certifications-list li {
   margin-bottom: 8px;
 }
+.languages-list {
+  list-style: none;
+  padding-left: 0;
+  line-height: 1.8;
+  color: #cbd5e1;
+  font-size: 14px;
+}
+
+.languages-list li::before {
+  content: "• "; /* bullet i vogël */
+  color: #58a6ff; /* ngjyra e bullets si titujt */
+}
   </style>
 </head>
 <body>
@@ -370,9 +382,12 @@ section h2 {
   </ul>
 </section>
     <section id="languages">
-      <h2>Languages</h2>
-      <p>List the languages you speak.</p>
-    </section>
+  <h2>Languages</h2>
+  <ul class="languages-list">
+    <li>Albanian — Native</li>
+    <li>English — Excellent</li>
+  </ul>
+</section>
 
   </div>
 </body>
