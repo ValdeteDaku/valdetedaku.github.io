@@ -24,6 +24,7 @@
 
     /* ===== NAVBAR ===== */
 /* ===== NAVBAR ===== */
+/* ===== NAVBAR ===== */
 nav {
   position: sticky;
   top: 0;
@@ -33,9 +34,10 @@ nav {
   padding: 15px 20px; /* pak padding nga krahu i majtë */
   background: transparent; /* pa background */
   width: 100%; /* shtrihet e gjithe faqja */
-  border-bottom: 1px solid #30363d; /* vija e hollë poshtë menu */
+  border-bottom: 1px solid #30363d; /* vetem kjo vija */
 }
 
+/* ===== NAV LINKS ===== */
 nav ul {
   list-style: none;
   margin: 0;
@@ -110,19 +112,18 @@ nav ul li a:hover {
     }
 
     /* ===== SECTIONS ===== */
-    section {
-      padding: 60px 0;
-      border-bottom: 1px solid #30363d;
-    }
+section {
+  padding: 60px 0;
+  border-bottom: none; /* largojme vijat poshte seksioneve */
+}
 
-    section h2 {
-      font-size: 26px;
-      margin-bottom: 20px;
-      color: #58a6ff;
-      border-bottom: 2px solid #30363d;
-      padding-bottom: 10px;
-    }
-
+section h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: #58a6ff;
+  border-bottom: none; /* largojme edhe vijen tek titujt */
+  padding-bottom: 0;
+}
     section p {
       line-height: 1.6;
     }
