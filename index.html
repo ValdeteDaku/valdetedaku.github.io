@@ -11,15 +11,26 @@
       padding: 0;
       background-color: #0d1117;
       color: #e6edf3;
+      display: flex;
+      justify-content: center; /* qendron faqja horizontalisht */
+    }
+
+    /* ===== MAIN CONTAINER ===== */
+    .container {
+      width: 100%;
+      max-width: 900px; /* dimensionet si taulant */
+      padding: 0 20px;
     }
 
     /* ===== NAVBAR ===== */
     nav {
       background-color: #161b22;
-      padding: 15px 40px;
+      padding: 15px 0;
       position: sticky;
       top: 0;
       z-index: 1000;
+      display: flex;
+      justify-content: center;
     }
 
     nav ul {
@@ -40,7 +51,6 @@
       background: #121722;
       color: #cbd5e1;
       font-size: 14px;
-      /*font-weight: bold;*/
       text-decoration: none;
       transition: all 0.3s;
     }
@@ -55,8 +65,8 @@
     .header {
       display: flex;
       align-items: center;
-      padding: 40px;
-      background-color: #161b22;
+      padding: 40px 0;
+      border-bottom: 1px solid #30363d;
     }
 
     .header img {
@@ -80,19 +90,13 @@
       color: #8b949e;
     }
 
-    /* ===== SECTIONS ===== */
-    section {
-      padding: 60px 40px;
-      max-width: 900px;
-      margin: auto;
-      border-bottom: 1px solid #30363d;
+    .header h2 a {
+      color: #ffffff; /* e bardhe */
+      text-decoration: none; /* pa underline */
+      font-weight: normal;
     }
 
-    section h2 {
-      font-size: 26px;
-      margin-bottom: 20px;
-      color: #58a6ff;
-    }
+    /* CONTACT LINKS */
     .contact-links {
       margin-top: 10px;
       font-size: 16px;
@@ -108,71 +112,90 @@
       text-decoration: underline;
     }
 
+    /* ===== SECTIONS ===== */
+    section {
+      padding: 60px 0;
+      border-bottom: 1px solid #30363d;
+    }
+
+    section h2 {
+      font-size: 26px;
+      margin-bottom: 20px;
+      color: #58a6ff;
+      border-bottom: 2px solid #30363d;
+      padding-bottom: 10px;
+    }
+
+    section p {
+      line-height: 1.6;
+    }
+
   </style>
 </head>
 <body>
+  <div class="container">
 
-  <!-- ===== NAVBAR ===== -->
-  <nav>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#certifications">Certifications</a></li>
-      <li><a href="#languages">Languages</a></li>
-    </ul>
-  </nav>
+    <!-- ===== NAVBAR ===== -->
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#languages">Languages</a></li>
+      </ul>
+    </nav>
 
-  <!-- ===== HEADER ===== -->
-<div class="header">
-    <img src="VD _photo.png" alt="Profile Photo">
-    <div>
-      <h1>Valdete Daku</h1>
-      <h2>
-        Lecturer at Faculty of Computer Science at 
-        <a href="https://aab-edu.net" target="_blank">AAB College</a>
-      </h2>
+    <!-- ===== HEADER ===== -->
+    <div class="header">
+      <img src="VD _photo.png" alt="Profile Photo">
+      <div>
+        <h1>Valdete Daku</h1>
+        <h2>
+          Lecturer at Faculty of Computer Science at 
+          <a href="https://aab-edu.net" target="_blank">AAB College</a>
+        </h2>
 
-      <!-- CONTACT LINKS -->
-      <div class="contact-links">
-        <a href="mailto:valdete.daku@aab-edu.net">Email</a> | 
-        <a href="https://aab-edu.net" target="_blank">AAB College</a> | 
-        <a href="https://www.linkedin.com/in/valdete-daku-99316034/" target="_blank">LinkedIn</a>
+        <div class="contact-links">
+          <a href="mailto:valdete.daku@aab-edu.net">Email</a> | 
+          <a href="https://aab-edu.net" target="_blank">AAB College</a> | 
+          <a href="https://www.linkedin.com/in/valdete-daku-99316034/" target="_blank">LinkedIn</a>
+        </div>
       </div>
     </div>
+
+    <!-- ===== SECTIONS ===== -->
+    <section id="about">
+      <h2>About</h2>
+      <p>Write a short introduction about yourself here.</p>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <p>List your work experience here.</p>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <p>Write your academic background here.</p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <p>List your technical and soft skills here.</p>
+    </section>
+
+    <section id="certifications">
+      <h2>Certifications</h2>
+      <p>Add your certifications here.</p>
+    </section>
+
+    <section id="languages">
+      <h2>Languages</h2>
+      <p>List the languages you speak.</p>
+    </section>
+
   </div>
-
-  <!-- ===== SECTIONS ===== -->
-  <section id="about">
-    <h2>About</h2>
-    <p>Write a short introduction about yourself here.</p>
-  </section>
-
-  <section id="experience">
-    <h2>Experience</h2>
-    <p>List your work experience here.</p>
-  </section>
-
-  <section id="education">
-    <h2>Education</h2>
-    <p>Write your academic background here.</p>
-  </section>
-
-  <section id="skills">
-    <h2>Skills</h2>
-    <p>List your technical and soft skills here.</p>
-  </section>
-
-  <section id="certifications">
-    <h2>Certifications</h2>
-    <p>Add your certifications here.</p>
-  </section>
-
-  <section id="languages">
-    <h2>Languages</h2>
-    <p>List the languages you speak.</p>
-  </section>
-
 </body>
 </html>
