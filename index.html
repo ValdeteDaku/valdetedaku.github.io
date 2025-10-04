@@ -13,6 +13,35 @@
       color: #e6edf3;
     }
 
+    /* ===== NAVBAR ===== */
+    nav {
+      background-color: #161b22;
+      padding: 15px 40px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 30px;
+    }
+
+    nav ul li a {
+      color: #e6edf3;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #58a6ff;
+    }
+
+    /* ===== HEADER ===== */
     .header {
       display: flex;
       align-items: center;
@@ -40,9 +69,37 @@
       font-weight: normal;
       color: #8b949e;
     }
+
+    /* ===== SECTIONS ===== */
+    section {
+      padding: 60px 40px;
+      max-width: 900px;
+      margin: auto;
+      border-bottom: 1px solid #30363d;
+    }
+
+    section h2 {
+      font-size: 26px;
+      margin-bottom: 20px;
+      color: #58a6ff;
+    }
   </style>
 </head>
 <body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#languages">Languages</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== HEADER ===== -->
   <div class="header">
     <img src="VD _photo.png" alt="Profile Photo">
     <div>
@@ -50,5 +107,37 @@
       <h2>Lecturer at Faculty of Computer Science at AAB College</h2>
     </div>
   </div>
+
+  <!-- ===== SECTIONS ===== -->
+  <section id="about">
+    <h2>About</h2>
+    <p>Write a short introduction about yourself here.</p>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <p>List your work experience here.</p>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <p>Write your academic background here.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <p>List your technical and soft skills here.</p>
+  </section>
+
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <p>Add your certifications here.</p>
+  </section>
+
+  <section id="languages">
+    <h2>Languages</h2>
+    <p>List the languages you speak.</p>
+  </section>
+
 </body>
 </html>
